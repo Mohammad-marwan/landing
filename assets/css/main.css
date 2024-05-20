@@ -6,6 +6,7 @@
     box-shadow: 0px 1.2673168182373047px 6.336584091186523px rgba(0, 0, 0, 0.301);
     padding:15px 0;
     z-index: 10;
+    background-color: white;
 }
 
 .container{
