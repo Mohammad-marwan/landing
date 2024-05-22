@@ -32,9 +32,3 @@ a {
 body {
     font-family: var(--mainfont);
 }
-@media (max-width:992px){
-    .nav{
-        display: none;
-    }
-    
-}
