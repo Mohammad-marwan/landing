@@ -2,8 +2,8 @@
 
 /*   start-header   */
 .header {
-    position: sticky;
-    top: 0;
+    position: fixed;
+    width:100%;
     box-shadow: 0px 1.2673168182373047px 6.336584091186523px rgba(0, 0, 0, 0.301);
     padding: 15px 0;
     z-index: 10;
@@ -189,12 +189,22 @@
     width: 70%;
     display: flex;
 }
+.icon-left-right{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    margin-top: 10px;
+    gap:5px;
+}
 
 @media (max-width:740px) {
 
-    .Course-Begins .Course-Begins-content h1,
-    .course {
+    .Course-Begins .Course-Begins-content h1
+    {
         font-size: 40px;
+    }
+    .Course-Begins .Course-Begins-content h1 span{
+        font-size:40px;
     }
 
     .Course-Begins .Course-Begins-content .course {
@@ -300,28 +310,62 @@
     color: #dddddd;
 
 }
-
-.WHAT-WE-GIVE .icon-left-right {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    transform: translateX(-30px);
-    gap: 5px;
-
-}
-
-.WHAT-WE-GIVE .icon-left-right img {
+ .icon-left-right img {
     width: 25px;
-    transform: translateX(320px);
+
 }
-@media(max-width:900px){
-    .WHAT-WE-GIVES{
+@media(max-width:800px){
+    .WHAT-WE-GIVE .WHAT-WE-GIVES{
         width:100%;
+        justify-content: center;
+        align-items: center;
+        
     }
-    .WHAT-WE-GIVE-contents{
-        width:50%;
+    .WHAT-WE-GIVE .row{
+    display: block;
     }
+    .WHAT-WE-GIVE-content .row{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+        padding: 20px 0;
+    }
+   
 }
+@media(max-width:510px){
+    .WHAT-WE-GIVE .WHAT-WE-GIVES{
+        width:100%;
+        font-size: 40px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .WHAT-WE-GIVE .row{
+    display: block;
+    }
+    .WHAT-WE-GIVE-content .row{
+        display: flex;
+        flex-basis: 200px;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+        padding: 20px 0;
+    }
+   
+}
+@media (max-width:410px){
+    .WHAT-WE-GIVE-content .row
+    
+    {
+        display:block ;} 
+        .WHAT-WE-GIVE-content .WHAT-WE-GIVE-contents {
+    width: 300px;
+    margin-bottom: 40px;
+        }
+}
+
 /* end WHAT-WE-GIVE*/
 /* start People Taking Courses */
 .People-Taking-Courses {
@@ -413,14 +457,17 @@
     color: #dddddd;
 }
 
-@media (max-width:800px){
+@media (max-width:800px) and (min-width:410px){
     .People-Taking-Courses img {
         display: none;
     }
-    .People-Taking-Courses-contents{
-       width: 100%;
+    .People-Taking-Courses .row{
+       display: block;
     }
 }
+
+
+
 
 
 /* end People Taking Courses */
@@ -501,6 +548,16 @@
     flex-wrap: wrap;
     align-items: flex-start;
 }
+@media (max-width:580px){
+    .Testimonials .row{
+        display: block;
+    }
+    .Testimonials .Testimonial{
+        width:300px;
+        margin-bottom: 30px;
+    }
+}
+
 
 /* end Testimonials*/
 /*start course*/
@@ -638,14 +695,64 @@ font-family: var(--subfont);
 font-weight: 700;
 color: #ffffff;
 }
-@media(max-width:800px){
-    .courses-description{
-        width:100%;
+
+
+@media(min-width:410px) and (max-width:800px){
+    .Courses .row{
+        display:block;
     }
     .card {
         width:100%;
+     
     }
+    .courses-item{
+        width:100%;
+    }
+
 }
+@media(max-width:410px){
+    .Courses .row{
+        display:block;
+    }
+    .card {
+        width:100%;
+     
+    }
+    .courses-item{
+        width:100%;
+        display: block;
+        margin-left: 50px;
+    }
+    .courses-item .card{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .courses-description {
+        margin-left: 50px;
+    }
+    .courses-description span , .courses-description h2,.courses-description a ,  .courses-description p {
+        align-self: center;
+        padding: 5px;
+    }
+    .courses-description a {
+        font-size: 20px;
+    }
+    .courses-description h2 {
+        font-size: 30px;
+    }
+    .courses-description p{
+        font-size: 10px;
+        margin-left: 50px;
+    }
+    .Courses .row{
+        padding:3px;
+    }
+    .Courses {
+        padding: 50px 0;
+    }
+
+}
+
 
 /* end course*/
 /*start footer*/
