@@ -218,6 +218,17 @@
         display: none;
     }
 }
+@media (max-width:500px) {
+.courses-description{
+    margin-bottom: 0;
+}
+}
+@media (max-width:500px){
+.courses-description {
+    margin-left: 50px;
+   
+}
+}
 
 /* start WHAT-WE-GIVE */
 .WHAT-WE-GIVE {
@@ -465,6 +476,16 @@
        display: block;
     }
 }
+@media (max-width:410px){
+    .People-Taking-Courses .row{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .People-Taking-Courses .People-Taking-Courses-img{
+        display: none;
+    }
+}
 
 
 
@@ -556,6 +577,7 @@
         width:300px;
         margin-bottom: 30px;
     }
+    
 }
 
 
@@ -835,6 +857,12 @@ color: #ffffff;
     .start-footer a:nth-child(2) {
         display: none;
     }
+    .footer .row{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
+
 
 /* end footer*/
