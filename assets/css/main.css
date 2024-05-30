@@ -219,14 +219,18 @@
     }
 }
 @media (max-width:500px) {
-.courses-description{
+    .courses-description {
+        
     margin-bottom: 0;
 }
 }
 @media (max-width:500px){
 .courses-description {
-    margin-left: 50px;
+    margin-left: 0px;
    
+}
+.courses-description h2{
+    width: 0;
 }
 }
 
@@ -387,6 +391,7 @@
 
 .People-Taking-Courses .row {
     gap: 150px;
+    align-items: stretch;
 }
 
 .People-Taking-Courses .People-Taking-Courses-img,
@@ -733,6 +738,10 @@ color: #ffffff;
 
 }
 @media(max-width:410px){
+    .Courses .container{
+        width: 95%;
+    }
+   
     .Courses .row{
         display:block;
     }
@@ -743,14 +752,16 @@ color: #ffffff;
     .courses-item{
         width:100%;
         display: block;
-        margin-left: 50px;
+        
     }
     .courses-item .card{
         width: 300px;
+        margin: auto;
         margin-bottom: 20px;
     }
     .courses-description {
-        margin-left: 50px;
+        width: 100%;
+        margin-bottom: 0;  
     }
     .courses-description span , .courses-description h2,.courses-description a ,  .courses-description p {
         align-self: center;
