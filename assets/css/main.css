@@ -241,6 +241,7 @@
 
 .WHAT-WE-GIVE .row {
     gap: 2px;
+    align-items: stretch;
 }
 
 .WHAT-WE-GIVES,
